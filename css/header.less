@@ -1,0 +1,340 @@
+.hide{
+    display:none;
+}
+.show{
+    display:block;
+}
+.H{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background: url("../images/topfoot-new.jpg") no-repeat -163px -113px;
+}
+.N{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background: url("../images/topfoot-new.jpg") no-repeat -144px -113px;
+}
+.color{
+    background-color:rgba(0,0,0,0.9)
+}
+.blank_color{
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.7)  0%,
+            rgba(0,0,0,.3) 100%
+    );
+}
+
+#arrow{
+    color:goldenrod;
+    display:inline-block;
+    animation:move 0.8s linear alternate infinite;
+}
+@keyframes move{
+    from{
+        transform: translate(0,0);
+    }
+    to{
+        transform:translate(8px,0);
+    }
+}
+
+
+
+
+// 整体头部区域,这是外面整体的大盒子
+#nav{
+    margin:0 auto;
+    width:auto;
+    width:100%;
+    height:720px;
+    position:relative;
+    img{
+        width:100%;
+        height:100%;
+        position:absolute;
+    }
+  
+    // 第一部分,导航区域
+    #nav_head{
+        position:relative;
+        display:flex;
+        // background-color:rgba(0,0,0,0.7);
+        background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0,1)  0%,
+            rgba(0,0,0,.7) 100%
+        );
+
+        //图标区域
+        #nav_logo{
+            width:132px;
+            height:49px;
+            padding-top: 14px;
+            margin-left: 40px;
+            margin-right: 60px;
+            a{
+            display:block;
+                img{
+                    width:100%;
+                    height:100%;
+                    position:relative;
+                }
+            }
+        }
+
+    //列表区域
+        #list{
+            position:relative;
+            margin-top:12px;
+            height:50px;
+            width:700px;
+            text-align:center;
+            li{
+                margin-left:60px;
+                float:left;
+                p:nth-child(2n+1){
+                    font-size:18px;
+                    color:#fff;
+                    font-family: "微软雅黑";
+                }
+                p:nth-child(2n){
+                    font-size:12px;
+                    color:#aeaeae;
+                    font-family: "微软雅黑";
+                }
+            }
+            li:nth-child(1){
+                margin-left:0;
+            }
+        }
+
+        //搜索图片区域
+        #search{
+            width:23px;
+            height:24px;
+            // margin-left:70px;
+            // margin-top:15px;
+            position:relative;
+            top: 17px;
+        }
+        //手机图片区域
+        #phone{
+            width:24px;
+            height:24px;
+            // margin-left:20px;
+            // margin-top:15px;
+            position:relative;
+            top: 17px;
+            left: 10px;
+        }
+        #erweima{
+            position:absolute;
+            z-index: 3;
+            width:160px;
+            height:160px;
+            margin-left:896px;
+            margin-top:63px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.7);
+            img{
+                width:96px;
+                height:96px;
+                left:32px;
+                bottom:32px;
+            }
+        }
+        //登陆区域
+        #register{
+            position: absolute;
+            top: 0;
+            right: 0;
+            // // float: right;
+            // margin-right:20px;
+            padding-top:10px;
+            box-sizing: border-box;
+            width:270px;
+            height: 100%;
+            #default{
+                float:left;
+                margin-left:10px;
+                width:42px;
+                height:42px;
+                border:1px #cdbe91 solid;
+                border-radius:50%;
+                // text-align:center;
+                img{
+                    width:42px;
+                    height:42px;
+                    border-radius:50%;
+                }
+            }
+            p{
+                margin-top:10px;
+                margin-right:20px;
+                float:right;
+                text-align: center;
+                font-size:18px;
+                color:#fff;
+                font-family: "微软雅黑";
+                a{
+                    color:#cdbe91;
+                }
+            } 
+        }
+
+        //登陆区域隐藏部分
+        #register_hide{
+            position:absolute;
+            z-index: 3;
+            right:0;
+            margin-top:53px;
+            width:100%;
+            height:180px;
+            background-color:rgba(0,0,0,0.7);
+            p{
+                font-size:12px;
+                color:#aeaeae;
+                font-family: "微软雅黑";
+            }
+            p:nth-child(1){
+                margin-top:24px;
+                padding-left:15px;
+            }
+            p:nth-child(2){
+                margin-right:78px;
+                margin-top:10px;
+            }
+            P:nth-child(3){
+                margin-top:25px;
+                padding-left:15px;
+            }
+            p:nth-child(4){
+                margin-right:70px;
+                margin-top:35px;
+                height:25px;
+                line-height: 9px;
+                text-align:center;
+                font-size:18px;
+                a{
+                    color:#fff;
+                    text-align:center;
+                }
+                a:hover{
+                    color:#cdbe91;
+                }
+            }
+        }
+    }
+
+    //列表隐藏区域
+    #hide_detail{
+        // position:relative;
+        z-index:2;
+        box-sizing: border-box;
+        position:absolute;
+        padding-left:210px;
+        // width:100%;
+        width:1103px;
+        height:260px;
+        text-align:center;
+        background-image: linear-gradient(
+            to bottom,
+         rgba(0, 0, 0, 0.7)  0%,
+         rgba(0,0,0,.3) 100%
+        );
+    
+        ul{
+            float:left;
+            margin-left:30px;
+            li{
+                margin-top:12px;
+                a{
+                    font-size:14px;
+                    // color:#aeaeae;
+                    font-family: "微软雅黑";
+                    color:#fff;
+                   
+                }
+                a:hover{
+                    color:#cdbe91;
+                }
+            }
+        }
+        ul:nth-child(1){
+            left:128px;
+        }
+        ul:nth-child(3){
+            margin-left:45px;
+        }
+        ul:nth-child(4){
+            margin-left:30px;
+        }
+        ul:nth-child(5){
+            margin-left:40px;
+        }
+        #guide{
+            margin-left:0;
+        }
+    }
+
+    // 查看更多按钮
+    #detail{
+        // position: relative;
+        position:absolute;
+        z-index: 1;
+        left:47%;
+        // margin-bottom:200px;
+        bottom: 44px;
+        width:140px;
+        height:35px;
+        border:1px solid #b18733;
+        background-color: rgba(0,0,0,0.5);
+        text-align: center;
+        line-height: 35px;
+        font-size:16px;
+        a{
+            color:#b18733;
+            font-size: 16px;
+            font-family: "微软雅黑";
+        }
+
+    }
+
+    #edition{
+        position:absolute;
+        right:10%;
+        bottom:12%;
+        width:180px;
+        text-align: center;
+        height:22px;
+        line-height: 22px;
+        font-size:16px;
+        span:nth-child(1){
+            color:#888787;
+        }
+        span:nth-child(2){
+            color:#f5d181;
+        }
+    }
+    #edition_detail{
+        position:absolute;
+        right:0;
+        bottom: 12%;
+        width:100px;
+        height:32px;
+        border:2px solid #b78c35;    
+        line-height: 32px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+        a{
+            font-size:14px;
+            color:#e5c17c;
+        }
+    }
+}
+
